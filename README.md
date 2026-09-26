@@ -8,7 +8,7 @@
 
 I build document intelligence systems and dependable AI workflows with clear boundaries, traceable evidence, and measurable quality.
 
-[![GitHub](https://img.shields.io/badge/GitHub-jesko2004-181717?style=flat-square&logo=github)](https://github.com/jesko2004) [![Primary Project](https://img.shields.io/badge/Primary_Project-PDF_Inspector-0A7EA4?style=flat-square)](https://github.com/jesko2004/pdf-inspector) [![Focus](https://img.shields.io/badge/Focus-Document_AI_%26_RAG-6F42C1?style=flat-square)](https://github.com/jesko2004/pdf-inspector)
+[![GitHub](https://img.shields.io/badge/GitHub-jesko2004-181717?style=flat-square&logo=github)](https://github.com/jesko2004) [![Primary Project](https://img.shields.io/badge/Primary_Project-PDF_Inspector-0A7EA4?style=flat-square)](https://github.com/jesko2004/pdf-inspector) [![Open Source](https://img.shields.io/badge/Open_Source-JiraTUI_Contributor-2EA44F?style=flat-square&logo=github)](https://github.com/whyisdifficult/jiratui/pull/361) [![Focus](https://img.shields.io/badge/Focus-Document_AI_%26_RAG-6F42C1?style=flat-square)](https://github.com/jesko2004/pdf-inspector)
 
 </div>
 
@@ -79,15 +79,22 @@ I am refining **PDF Inspector** into a dependable local-first document intellige
 <tr>
 <td width="50%" valign="top">
 
-### JiraTUI · PR #361
+### JiraTUI · 1.7k+ Stars
 
-**Jira Server sprint compatibility**
+**Contributor · Merged PR #361**
 
-Fixed a work-item details crash caused by Jira Server/Data Center returning Sprint fields as strings instead of Cloud-style objects. Added parsing for direct and list-wrapped values, including legacy Sprint representations, plus regression coverage for each supported shape.
+Fixed a work-item details crash caused by Jira Server/Data Center returning Sprint fields as strings instead of Cloud-style objects.
+
+**My contribution**
+
+- Built a backward-compatible parser for Cloud JSON, scalar strings, list-wrapped values, and legacy Java-style Sprint representations.
+- Extracted real Sprint names across field-order variations, including `rapidViewId`, `id`, and `state`, while preserving names containing commas.
+- Confirmed the Cloud Sprint update path remained intact and the Server/DC field stayed safely read-only.
+- Added regression coverage, passed the cross-platform CI matrix, and incorporated validation from a Jira Data Center 10.6 user.
 
 `Python` `Regex` `Jira API` `Regression Tests`
 
-[View pull request →](https://github.com/whyisdifficult/jiratui/pull/361)
+[Merged pull request →](https://github.com/whyisdifficult/jiratui/pull/361) · [Merged commit →](https://github.com/whyisdifficult/jiratui/commit/b2bda27b62fb8ff92cf8b491a3f7ebf2806698d7)
 
 </td>
 <td width="50%" valign="top">
