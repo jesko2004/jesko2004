@@ -8,7 +8,7 @@
 
 I build document intelligence systems and dependable AI workflows with clear boundaries, traceable evidence, and measurable quality.
 
-[![GitHub](https://img.shields.io/badge/GitHub-jesko2004-181717?style=flat-square&logo=github)](https://github.com/jesko2004) [![Primary Project](https://img.shields.io/badge/Primary_Project-PDF_Inspector-0A7EA4?style=flat-square)](https://github.com/jesko2004/pdf-inspector) [![Open Source](https://img.shields.io/badge/Open_Source-JiraTUI_Contributor-2EA44F?style=flat-square&logo=github)](https://github.com/whyisdifficult/jiratui/pull/361) [![Focus](https://img.shields.io/badge/Focus-Document_AI_%26_RAG-6F42C1?style=flat-square)](https://github.com/jesko2004/pdf-inspector)
+[![GitHub](https://img.shields.io/badge/GitHub-jesko2004-181717?style=flat-square&logo=github)](https://github.com/jesko2004) [![Primary Project](https://img.shields.io/badge/Primary_Project-PDF_Inspector-0A7EA4?style=flat-square)](https://github.com/jesko2004/pdf-inspector) [![Open Source](https://img.shields.io/badge/Open_Source-Contributor-2EA44F?style=flat-square&logo=github)](https://github.com/jesko2004#open-source-contributions) [![Focus](https://img.shields.io/badge/Focus-Document_AI_%26_RAG-6F42C1?style=flat-square)](https://github.com/jesko2004/pdf-inspector)
 
 </div>
 
@@ -67,7 +67,7 @@ An advisory AI Pull Request reviewer that turns diffs, repository context, tests
 
 ## Current Build
 
-I am refining **PDF Inspector** into a dependable local-first document intelligence foundation while contributing focused compatibility and reliability fixes to developer tools such as **JiraTUI** and **Microsoft MarkItDown**.
+I am refining **PDF Inspector** into a dependable local-first document intelligence foundation while contributing focused compatibility and reliability fixes to **JiraTUI**, **Rainfrog**, **tldextract**, and **Microsoft MarkItDown**.
 
 `Document AI` `Local-first RAG` `Reliable Agent Tools` `Open Source`
 
@@ -76,6 +76,50 @@ I am refining **PDF Inspector** into a dependable local-first document intellige
 ## Open Source Contributions
 
 <table>
+<tr>
+<td width="50%" valign="top">
+
+### [Rainfrog](https://github.com/achristmascarl/rainfrog) · 5.3k+ Stars
+
+**Contributor · Merged PR #344**
+
+A Rust terminal database tool for editing SQL, running queries, and browsing results.
+
+**My contribution**
+
+- Fixed SQL syntax highlighting that skipped adjacent keywords because the regex consumed the separator after each match.
+- Used a non-consuming word boundary to preserve highlighting across consecutive keywords.
+- Added a rendering regression test with Ratatui TestBackend to verify the actual highlighted characters.
+
+**Validation:** 183 tests passed with `--no-default-features`; all 10 remote CI checks passed, including Windows, macOS, and Linux test suites.
+
+`Rust` `Regex` `Ratatui` `Regression Tests` `GitHub Actions`
+
+[Merged pull request →](https://github.com/achristmascarl/rainfrog/pull/344) · [Merged commit →](https://github.com/achristmascarl/rainfrog/commit/771fa61b86bc9a4838c952d729ba79319a556f33)
+
+</td>
+<td width="50%" valign="top">
+
+### [tldextract](https://github.com/john-kurkowski/tldextract) · 2k+ Stars
+
+**Contributor · Merged PR #383**
+
+A Python library that separates URL subdomains, domains, and public suffixes using the Public Suffix List (PSL).
+
+**My contribution**
+
+- Reported a reproducible bug where an incomplete longer trie match discarded the private metadata of the suffix that actually matched.
+- Preserved the last complete suffix node, correcting `is_private`, `registry_suffix`, and `top_domain_under_registry_suffix` results.
+- Added seven offline regression cases covering incomplete matches, a complete longer match, a wildcard parent, and private suffix extraction disabled.
+
+**Validation:** 118 tests passed with one Windows-specific skip; formatting, lint, and type checks passed. All 25 remote CI checks passed across Windows, macOS, Linux, CPython 3.10–3.14, and PyPy.
+
+`Python` `Trie` `Domain Parsing` `pytest` `Ruff` `mypy`
+
+[Resolved issue →](https://github.com/john-kurkowski/tldextract/issues/382) · [Merged pull request →](https://github.com/john-kurkowski/tldextract/pull/383) · [Merged commit →](https://github.com/john-kurkowski/tldextract/commit/89b9aebf6d9860cca2bd5fe6a5f3f506bb266363)
+
+</td>
+</tr>
 <tr>
 <td width="50%" valign="top">
 
